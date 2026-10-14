@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soluciones Financieras: alternativas de crédito, libranza, compra de cartera y refinanciación para pensionados.">
+  <title>Soluciones Financieras | Créditos para pensionados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="#inicio" class="brand">
+      <span class="sf-logo"><b>S</b><i>F</i></span>
+      <span><strong>SOLUCIONES</strong><small>FINANCIERAS</small></span>
+    </a>
+    <nav>
+      <a href="#productos">Soluciones</a>
+      <a href="#simulador">Simulador</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-orange" href="#solicitud">Solicitar asesoría</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="hero-orb orb-one"></div>
+  <div class="hero-orb orb-two"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="kicker">SOLUCIONES FINANCIERAS</span>
+      <h1>Tu tranquilidad financiera también hace parte de tus <em>planes.</em></h1>
+      <p>Encuentra alternativas de crédito para pensionados con orientación personalizada, información clara y acompañamiento durante el proceso.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-orange btn-big" href="#simulador">Simular mi crédito</a>
+        <a class="btn btn-white btn-big" href="#solicitud">Hablar con un asesor</a>
+      </div>
+      <div class="mini-trust">
+        <span>✓ Atención personalizada</span>
+        <span>✓ Información clara</span>
+        <span>✓ Acompañamiento</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="sun"></div>
+      <div class="person-card">
+        <div class="person-circle">👩‍🦳</div>
+        <div>
+          <strong>¿Eres pensionado?</strong>
+          <span>Conoce tus opciones de financiación.</span>
+        </div>
+      </div>
+      <div class="floating-card fc-top"><b>4</b><span>soluciones<br>financieras</span></div>
+      <div class="floating-card fc-bottom"><b>✓</b><span>Asesoría<br>personalizada</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="quick-strip">
+  <div class="container quick-grid">
+    <div><b>Crédito</b><span>de libre inversión</span></div>
+    <div><b>Libranza</b><span>según perfil</span></div>
+    <div><b>Compra de cartera</b><span>organiza tus obligaciones</span></div>
+    <div><b>Refinanciación</b><span>revisa nuevas condiciones</span></div>
+  </div>
+</section>
+
+<section class="section" id="productos">
+  <div class="container">
+    <div class="heading">
+      <span class="kicker">NUESTRAS SOLUCIONES</span>
+      <h2>Una alternativa para cada necesidad</h2>
+      <p>Te orientamos sobre las opciones disponibles de acuerdo con tu perfil y las condiciones aplicables.</p>
+    </div>
+    <div class="products">
+      <article><span class="product-icon">💰</span><h3>Crédito de libre inversión</h3><p>Utiliza los recursos para proyectos personales, necesidades del hogar, educación u otros propósitos.</p><a href="#solicitud">Quiero información →</a></article>
+      <article><span class="product-icon">📄</span><h3>Libranza</h3><p>Conoce alternativas mediante descuento directo de la mesada, cuando esta modalidad aplique.</p><a href="#solicitud">Quiero información →</a></article>
+      <article><span class="product-icon">🔄</span><h3>Compra de cartera</h3><p>Consulta si es posible consolidar o trasladar obligaciones existentes bajo una nueva alternativa.</p><a href="#solicitud">Quiero información →</a></article>
+      <article><span class="product-icon">📊</span><h3>Refinanciación</h3><p>Revisa si una nueva estructura de plazo y cuota puede ajustarse a tu situación actual.</p><a href="#solicitud">Quiero información →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section simulator" id="simulador">
+  <div class="container simulator-grid">
+    <div class="simulator-copy">
+      <span class="kicker">SIMULADOR DE CRÉDITO</span>
+      <h2>Estima tu cuota mensual</h2>
+      <p>Ingresa un monto, una tasa y un plazo para obtener una estimación orientativa de la cuota.</p>
+      <div class="warning"><b>Importante:</b> el resultado es únicamente una simulación. La tasa, el monto, el plazo, seguros, cargos y aprobación final dependen del producto, del estudio y de las condiciones aplicables.</div>
+      <div class="simulator-features">
+        <span>✓ Cálculo estimado</span><span>✓ Sin guardar datos</span><span>✓ Resultado inmediato</span>
+      </div>
+    </div>
+
+    <div class="calculator">
+      <div class="calc-tabs">
+        <button class="active" type="button">Cuota mensual</button>
+      </div>
+      <label>Monto a solicitar
+        <div class="input-prefix"><span>$</span><input id="amount" type="number" min="100000" step="100000" value="10000000"></div>
+      </label>
+      <label>Tasa efectiva anual (E.A.)
+        <div class="range-row"><input id="rate" type="range" min="1" max="40" step="0.01" value="18"><strong id="rateValue">18.00%</strong></div>
+      </label>
+      <label>Plazo
+        <select id="term">
+          <option value="12">12 meses</option>
+          <option value="24">24 meses</option>
+          <option value="36">36 meses</option>
+          <option value="48">48 meses</option>
+          <option value="60">60 meses</option>
+          <option value="72">72 meses</option>
+          <option value="84">84 meses</option>
+          <option value="120">120 meses</option>
+        </select>
+      </label>
+
+      <div class="result">
+        <span>Cuota mensual estimada</span>
+        <strong id="payment">$0</strong>
+        <div class="result-line"><span>Total estimado pagado</span><b id="total">$0</b></div>
+        <div class="result-line"><span>Intereses estimados</span><b id="interest">$0</b></div>
+      </div>
+      <a id="simulatorWhatsapp" class="btn btn-orange btn-full" target="_blank" rel="noopener">Consultar esta simulación por WhatsApp</a>
+      <small>La simulación utiliza una cuota fija como referencia y no incluye seguros, impuestos, comisiones u otros conceptos que puedan aplicar.</small>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="beneficios">
+  <div class="container two-col">
+    <div>
+      <span class="kicker">¿POR QUÉ SOLUCIONES FINANCIERAS?</span>
+      <h2>Queremos que tomes decisiones con confianza.</h2>
+      <p>Sabemos que un crédito es una decisión importante. Por eso nuestro compromiso es acompañarte con información comprensible y atención cercana.</p>
+      <a href="#solicitud" class="btn btn-orange">Quiero hablar con un asesor</a>
+    </div>
+    <div class="benefits">
+      <div><b>01</b><h3>Orientación personalizada</h3><p>Escuchamos tu necesidad y revisamos qué alternativa podría aplicar.</p></div>
+      <div><b>02</b><h3>Requisitos claros</h3><p>Te explicamos qué información se requiere antes de avanzar.</p></div>
+      <div><b>03</b><h3>Información transparente</h3><p>Conoce las condiciones antes de tomar una decisión.</p></div>
+      <div><b>04</b><h3>Acompañamiento</h3><p>Un asesor te guía durante las etapas de la solicitud.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="requisitos">
+  <div class="container">
+    <div class="heading">
+      <span class="kicker">SI ERES PENSIONADO</span>
+      <h2>¿Qué información podemos solicitar?</h2>
+      <p>Los documentos definitivos dependen de la alternativa y del estudio de crédito.</p>
+    </div>
+    <div class="requirements">
+      <div class="req-card">
+        <span>01</span><h3>Identificación</h3><p>Documento de identidad vigente.</p>
+      </div>
+      <div class="req-card">
+        <span>02</span><h3>Ingresos</h3><p>Soporte o desprendible de la mesada pensional, cuando aplique.</p>
+      </div>
+      <div class="req-card">
+        <span>03</span><h3>Obligaciones</h3><p>Información de créditos actuales si estás consultando compra de cartera o refinanciación.</p>
+      </div>
+      <div class="req-card">
+        <span>04</span><h3>Datos de contacto</h3><p>Teléfono, ciudad y demás información necesaria para el estudio.</p>
+      </div>
+    </div>
+    <div class="legal-note"><b>Protege tus datos:</b> no envíes documentos sensibles por este formulario. Un asesor te indicará el canal autorizado y la documentación requerida.</div>
+  </div>
+</section>
+
+<section class="section process">
+  <div class="container">
+    <div class="heading">
+      <span class="kicker">ASÍ FUNCIONA</span>
+      <h2>Un proceso sencillo y acompañado</h2>
+    </div>
+    <div class="steps">
+      <div><span>1</span><h3>Cuéntanos</h3><p>Diligencia tus datos básicos y dinos qué necesitas.</p></div>
+      <div><span>2</span><h3>Te contactamos</h3><p>Un asesor se comunica contigo para entender tu solicitud.</p></div>
+      <div><span>3</span><h3>Validamos</h3><p>Se revisa la información y los documentos necesarios.</p></div>
+      <div><span>4</span><h3>Recibes respuesta</h3><p>Conoce la decisión y las condiciones que correspondan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq-section">
+  <div class="container faq-grid">
+    <div><span class="kicker">PREGUNTAS FRECUENTES</span><h2>Resolvemos tus dudas antes de avanzar.</h2></div>
+    <div class="faq">
+      <details open><summary>¿La simulación garantiza la aprobación?</summary><p>No. Es una estimación orientativa. La aprobación y las condiciones dependen del estudio de crédito y de las políticas aplicables.</p></details>
+      <details><summary>¿Puedo solicitar compra de cartera?</summary><p>Sí puedes consultarlo. Un asesor revisará si esta alternativa está disponible para tu perfil y obligaciones.</p></details>
+      <details><summary>¿Puedo solicitar una libranza siendo pensionado?</summary><p>Puede ser posible cuando se cumplan las condiciones de la modalidad y de la entidad pagadora. Se debe validar cada caso.</p></details>
+      <details><summary>¿Qué tasa me pueden ofrecer?</summary><p>La tasa no se define de forma general en esta página. Debe informarse según el producto, perfil, condiciones vigentes y estudio correspondiente.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="solicitud">
+  <div class="container contact-grid">
+    <div>
+      <span class="kicker">HABLEMOS</span>
+      <h2>¿Quieres conocer tus opciones?</h2>
+      <p>Déjanos tus datos. Un asesor podrá orientarte sobre el producto que mejor se adapte a tu necesidad.</p>
+      <div class="contact-pills"><span>📱 317 242 6159</span><span>📍 Calle 6 #15-19, Buga</span></div>
+    </div>
+    <form id="leadForm" class="lead-form">
+      <label>Nombre completo<input name="nombre" required placeholder="Tu nombre"></label>
+      <label>WhatsApp / teléfono<input name="telefono" required placeholder="300 000 0000"></label>
+      <label>¿Qué necesitas?
+        <select name="producto" required>
+          <option value="">Selecciona</option>
+          <option>Crédito de libre inversión</option>
+          <option>Libranza</option>
+          <option>Compra de cartera</option>
+          <option>Refinanciación</option>
+          <option>Quiero conocer mis opciones</option>
+        </select>
+      </label>
+      <label>Monto aproximado<input name="monto" placeholder="$ 10.000.000"></label>
+      <label class="consent"><input type="checkbox" required><span>Acepto el tratamiento de mis datos para gestionar esta solicitud y ser contactado.</span></label>
+      <button class="btn btn-orange btn-full" type="submit">Solicitar asesoría por WhatsApp</button>
+      <small>La solicitud está sujeta a estudio, aprobación y condiciones aplicables.</small>
+    </form>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <div><span class="kicker light">SOLUCIONES FINANCIERAS</span><h2>Tu próximo proyecto puede empezar con una conversación.</h2></div>
+    <a href="#simulador" class="btn btn-white btn-big">Simular crédito</a>
+  </div>
+</section>
+
+</main>
+
+<footer id="contacto">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#inicio" class="brand">
+        <span class="sf-logo"><b>S</b><i>F</i></span>
+        <span><strong>SOLUCIONES</strong><small>FINANCIERAS</small></span>
+      </a>
+      <p>Créditos · Libranzas · Compra de cartera · Refinanciación</p>
+    </div>
+    <div><h4>Contacto</h4><a href="https://wa.me/573172426159" target="_blank">WhatsApp 317 242 6159</a><p>Calle 6 #15-19, Buga</p></div>
+    <div><h4>Legal</h4><a href="#">Política de tratamiento de datos</a><a href="#">Aviso de privacidad</a><a href="#">Términos y condiciones</a></div>
+  </div>
+  <div class="footer-bottom"><div class="container"><p>© 2026 Soluciones Financieras.</p><p>La información de esta página es informativa y no constituye aprobación de crédito.</p></div></div>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/573172426159" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
+
+<script src="script.js"></script>
+</body>
+</html>
